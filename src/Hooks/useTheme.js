@@ -1,10 +1,4 @@
 import { useState, useEffect } from 'react'
-import {
-  orange,
-  lightBlue,
-  deepPurple,
-  deepOrange,
-} from '@material-ui/core/colors'
 
 const useTheme = () => {
   let userTheme = localStorage.getItem('theme')
