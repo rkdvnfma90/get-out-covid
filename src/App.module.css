@@ -22,10 +22,18 @@ body {
   .container {
     margin: 0 20%;
   }
+
+  .image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
   }
 }

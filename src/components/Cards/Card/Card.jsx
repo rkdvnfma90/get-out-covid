@@ -12,7 +12,7 @@ const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }
         {cardTitle}
       </Typography>
       <Typography variant="h5" component="h2">
-        <CountUp start={0} end={value} duration={2} separator="," />
+        <CountUp start={0} end={value} duration={2} separator="," /> 명
       </Typography>
       <Typography color="textSecondary">
         {new Date(lastUpdate).toLocaleDateString()}
