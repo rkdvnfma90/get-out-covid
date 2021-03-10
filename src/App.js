@@ -7,13 +7,11 @@ const App = () => {
   const [data, setData] = useState({})
 
   useEffect(() => {
-    const fetchCovidData = async () => {
-      const fetchedData = await fetchData()
-      console.log(fetchedData)
-      setData(fetchedData)
+    const fetchAPI = async () => {
+      setData(await fetchData())
     }
 
-    fetchCovidData()
+    fetchAPI()
   }, [])
 
   return (
