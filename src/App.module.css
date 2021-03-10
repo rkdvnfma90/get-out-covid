@@ -18,12 +18,14 @@ body {
   margin-top: 50px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20%;
+  }
+}
+
+@media (max-width: 480px) {
   .container {
     margin: 0 10%;
-  }
-
-  .image {
-    width: 100%;
   }
 }
