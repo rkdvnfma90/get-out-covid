@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 const useTheme = () => {
   let userTheme = localStorage.getItem('theme')
 
-  if (userTheme) {
+  if (!userTheme) {
     const { matches } = window.matchMedia('(prefers-color-scheme: dark)')
     userTheme = matches ? 'dark' : 'light'
   }
