@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Cards, Chart, CountryPicker } from './components'
 import styles from './App.module.css'
 import { fetchData } from './api'
+import logo from './images/logo.png'
 
 const App = () => {
   const [data, setData] = useState({})
@@ -23,6 +24,7 @@ const App = () => {
 
   return (
     <div className={styles.container}>
+      <img className={styles.image} src={logo} alt="Covid-19" />
       <Cards data={data} />
       <CountryPicker handleCountryChange={handleCountryChange} />
       <Chart data={data} country={country} />
